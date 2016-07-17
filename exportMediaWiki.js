@@ -240,9 +240,9 @@ function getMediaWikiFromAtext(pad, atext)
     {
       if (line.listTypeName == "number")
       {
-        pieces.push(new Array(line.listLevel + 1).join('') + '# ');
+        pieces.push(new Array(line.listLevel).join('#') + '# ');
       } else {
-        pieces.push(new Array(line.listLevel + 1).join('') + '* ');
+        pieces.push(new Array(line.listLevel).join('*') + '* ');
       }
     }
     pieces.push(lineContent);
